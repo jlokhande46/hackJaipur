@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<center> <h2><font color='white'>Thanks, you paid <strong>₹200</strong>!</font></h2></center>
+<div row>
+    <div class="column" style="background-color:#ffffff;border-style: solid;">
+  <h2><font color='black'>Alzheimer's</font></h2>
+     <form action = "/uploaded_al" method = "POST" 
+         enctype = "multipart/form-data">
+         <center><input type = "file" name = "file" />
+             <input type = "submit"/></center>
+      </form>
+    </div>
+    <div class="column" style="background-color:#ffffff;border-style: solid;margin: auto;">
+  <h2><font color='black'>Tumor</font></h2>
+        <form action = "/uploaded_tu" method = "POST" 
+         enctype = "multipart/form-data">
+         <center><input type = "file" name = "file" />
+             <input type = "submit"/></center>
+      </form>
+    </div>
+    <div class="column" style="background-color:#ffffff;border-style: solid;">
+  <h2><font color='black'>Parkinson's</font></h2>
+        <form action = "/uploaded" method = "POST" 
+         enctype = "multipart/form-data">
+         <center><input type = "file" name = "file" />
+             <input type = "submit" class="btn"/></center>
+      </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}
+<br>
+<br>

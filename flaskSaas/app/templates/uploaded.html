@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+	<body>
+	<!--img src="{{ user_image }}"-->
+	<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+        
+<h2>Results</h2>
+
+<img src="/static/img/{{path[1]}}" alt="Image">
+
+<table>
+  <tr>
+    <th>Disease</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>{{disease}}</td>
+  
+    <td>{{ predictions }}</td>
+      
+  </tr>
+</table>
+</body>
+
+
+
+{% endblock %}
