@@ -11,3 +11,13 @@ To begin with, we are focusing on the three most common brain diseases:
 
 ## Problem Statement
 Brain Imaging via magnetic resonance imaging (MRI) is used for the evaluation of patients with suspected brain diseases. However, in order to reach that stage, clinicians and researchers will have to make use of advanced deep learning techniques that can detect the diseases in their early stages. Thus, providing a common platform for doctors all over the world to detect brain tumors, Alzheimer's, and Parkinson's.
+
+## Dataset
+1) https://www.kaggle.com/tourist55/alzheimers-dataset-4-class-of-images
+2) https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection
+
+## Dependencies
+1) Flask
+2) Tensorflow
+3) Keras
+4) Stripe
