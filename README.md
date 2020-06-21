@@ -12,6 +12,48 @@ To begin with, we are focusing on the three most common brain diseases:
 ## Problem Statement
 Brain Imaging via magnetic resonance imaging (MRI) is used for the evaluation of patients with suspected brain diseases. However, in order to reach that stage, clinicians and researchers will have to make use of advanced deep learning techniques that can detect the diseases in their early stages. Thus, providing a common platform for doctors all over the world to detect brain tumors, Alzheimer's, and Parkinson's.
 
+## Methodology
+### 1. Brain Tumor
+#### Detection
+The detection of a brain tumor is done by analyzing the MRI scans of the patient. These MRI scans can detect the brain tumor in the early stages. Although In the early stages of the tumor the size of the tumor is petite. Thus, it can be ignored by an amateur doctor. 
+#### Dataset and preprocessing:
+The MRI scan images are collected from the kaggle, which contains scans of over 500 individual patients. The preprocessing of the images is done by using the concept of contours. To obtain more data, we used data augmentation techniques.
+![](images/this2.png)
+#### Model 
+The best model we could use was the VGGnet model. The VGG15 is deep enough to detect the tumor in these complex images, but it is a pre-trained model and also consists of the pooling layers, which avoids it from getting overfitted. 
+#### Results
+By training over more than 1200 images, we got an accuracy of 96%. Which is better than a human expert. Our model can detect the Tumour, and the results are shown in the window. The entire operation requires less than a minute to perform, which is a faster analysis than any doctor. 
+
+### 2. Alzheimer
+#### Detection
+The detection of Alzheimer's is done by analyzing the MRI images of the patient. These MRI images analyze the size of the hippocampus. There are three stages of Alzheimer's. It requires an expert to distinguish between these stages by looking at MRI scans of the patient. The three stages are:
+1) Very Mild demented
+2) Mild demented
+3) Moderate demented
+
+#### Dataset and preprocessing
+We obtained a dataset that contains more than 5000 MRI scans. The dataset is divided into 4 parts. 3 of them are stages of Alzheimer's, and the remaining is the normal brain scan. The main focus of detecting Alzheimer's is to analyze the central part of the brain where the hippocampus is present. We used thresholding techniques to enhance the scans. Cropping is used when the image is out of the axis.
+
+![](images/this3.png)
+
+#### Model
+The MRI images are complex, but we have ample amounts of data; hence we could use the CNN architecture for this problem. Our model consists of several convolution layers. The drop out layers is used to avoid the model from overfitting. By tuning hyperparameters, we could get a substantial increase in accuracy. 
+#### Results
+The detection of Alzheimer's is harder than the detection of tumors. We achieved about 73% accuracy during training. The model is as good as a human expert. With the bigger dataset and by using deeper neural networks, we can increase the accuracy.
+
+### 3. Parkinson's
+#### Detection
+The detection of Parkinson's does not require MRI or CT scan images. The detection can be done by analyzing the scribbled drawings from the patient. The best way is to analyze the spirals drawn by the patient. It is a standard technique used by doctors all over the world.
+#### Dataset and preparation:
+Our dataset consists of more than 1000 scribbles. The scribbles are drawn on the different types of paper and using different colors. 
+
+![](images/this1.png)
+#### Model
+The detection of Parkinson's does not require a complex neural network. A machine learning model can perform better than a neural network on these simple images.
+We used the Random forest algorithm for this dataset. The accuracy of the random forest is better because the images are simple i.e., there are very few objects in the image.
+#### Results
+We achieved 99% accuracy over this dataset. This signifies that our model is almost perfect in detecting Parkinson's. Other types of scribbles, like a wave drawing, can be used to detect Parkinson's with even better accuracy.
+
 ## Dataset
 1) https://www.kaggle.com/tourist55/alzheimers-dataset-4-class-of-images
 2) https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection
@@ -21,3 +63,18 @@ Brain Imaging via magnetic resonance imaging (MRI) is used for the evaluation of
 2) Tensorflow
 3) Keras
 4) Stripe
+
+## How to run
+
+1) Run the command "python manage.py runserver"
+2) Open "localhost:5000"
+
+## Demo
+
+
+## Features
+1) User account sign up, sign in, password reset, all through asynchronous email confirmation.
+2) Various Subscription offers based on usage.
+3) 99% accuracy for Parkinson's disease, 96% for Tumour, 73% for Alzheimer's
+4) More details after the detection of the disease
+
