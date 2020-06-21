@@ -1,5 +1,5 @@
 # AI-Scan
-
+![unknown](https://user-images.githubusercontent.com/30802318/77241908-057bb200-6c1f-11ea-9471-28bcd1b5a889.png)
 ## Introduction
 The report from the United Nations says nearly 1 in the 6 world's population suffer from neurological disorders i.e., more than 1 billion people in the world have some sort of neurological dysfunction. Neurological diseases like a brain tumor, Alzheimer, and Parkinson's are the second most leading cause of death in developing countries like India. Nearly 1 million people in India died due to stroke, migraine, or Parkinson's disease. The major reason behind these deaths is misguidance by the doctors or lack of it. Insufficient no of specialist doctors in India is the most important aspect of this problem.
 These deaths can be avoided by providing a common platform for doctors all over India, which can provide them a specialist approach for detecting these diseases in their early stages. It is a beneficiary for the doctors in rural India, where taking expert opinion is harder. With advanced deep learning techniques, we can provide doctors a personal analysis of the patient's brain. The MRI or the CT scan images are analyzed by a deep learning model, which is by far as expert as a specialist doctor in the field. This results in the early detection of disease, and the death toll can be lowered. 
