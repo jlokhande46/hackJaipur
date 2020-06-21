@@ -8,3 +8,6 @@ To begin with, we are focusing on the three most common brain diseases:
 1) Brain Tumor
 2) Dementia (Alzheimer)
 3) Movement disorder (Parkinson's)
+
+## Problem Statement
+Brain Imaging via magnetic resonance imaging (MRI) is used for the evaluation of patients with suspected brain diseases. However, in order to reach that stage, clinicians and researchers will have to make use of advanced deep learning techniques that can detect the diseases in their early stages. Thus, providing a common platform for doctors all over the world to detect brain tumors, Alzheimer's, and Parkinson's.
