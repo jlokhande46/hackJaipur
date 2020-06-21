@@ -70,7 +70,7 @@ We achieved 99% accuracy over this dataset. This signifies that our model is alm
 2) Open "localhost:5000"
 
 ## Demo
-
+https://vimeo.com/431162904
 
 ## Features
 1) User account sign up, sign in, password reset, all through asynchronous email confirmation.
